@@ -1,8 +1,10 @@
 # DSi CFW Helper
 this program does...
-## Instructions
-things you need to know
-### prerequisites
-* install python3
-* install pip
-* download dsi cfw files
+## Prerequisites
+these are things you need to do before starting the program
+### Install Python3
+explanation goes here
+### Install pip
+explanation goes here
+### Download DSi CFW Files
+explanation and files go here
