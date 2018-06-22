@@ -8,6 +8,7 @@ while True:
   if ans in ['y', 'yes', 'yep', 'yeah why not', 'alright', 'fine']:
     break
   elif ans in ['n', 'no', 'nope', 'no way', 'not a chance', 'not happening']:
+    print(' please enter the directory of the folder.')
     dwndir = 'C:\\' + input('Downloads directory = C:\\')
     # %USERPROFILE%\Downloads\ by default
     break
