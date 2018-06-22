@@ -1,1 +1,9 @@
-# helper put all the main code in the main folder andrew.....
+# DSi Helper
+sample text
+## sample text
+sample text
+### sample text
+sample text
+```
+sample text
+```
