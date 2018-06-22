@@ -1,7 +1,7 @@
 try:
   import pip
 except ImportError:
-  input('pip not installed! Press enter to close window.')
+  input('pip not installed! pip must be installed to run this program. Press enter to close window.')
   quit()
 
 def install(package):
