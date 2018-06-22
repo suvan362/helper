@@ -1,5 +1,5 @@
 # DSi CFW Helper
-this program does...
+description goes here
 ## Prerequisites
 these are things you need to do before starting the program
 ### Install Python3
