@@ -4,6 +4,7 @@ dsi cfw helper v1.0
 
 '''
 
+#import modules
 try:
   import pip
 except ImportError:
