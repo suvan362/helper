@@ -1,5 +1,22 @@
-import time
-import os.path
+try:
+  import pip
+except ImportError:
+  input('pip not installed! Press enter to close window.')
+  quit()
+
+def install(package):
+  pip.main(['install', package])
+
+try:
+  import time
+except ImportError:
+  install('time')
+
+try:
+  import os.path
+except ImportError:
+  install('os.path')
+
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
 time.sleep(0.5)
