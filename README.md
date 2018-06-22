@@ -9,7 +9,6 @@ explanation goes here
 ### Download DSi CFW Files
 explanation and files go here
 ## Authors
-Project created and developed by Suvan and TitleX
-```
-some legal thing or something goes here
-```
+This project was created and developed by Suvan and TitleX
+## License
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE.md](LICENSE.md) file for details.
