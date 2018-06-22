@@ -1,1 +1,1 @@
-#installs necessary libraries
+#installs necessary packages
