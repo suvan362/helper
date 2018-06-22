@@ -42,4 +42,4 @@ if checkA and checkB:
   pass
   #continue with program
 else:
-  print('file ' + 'file_needed.zip' + 'not found')
+  print('file ' + 'file_needed.zip' + ' not found')
