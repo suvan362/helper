@@ -1,4 +1,5 @@
 import time
+import os.path
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
 time.sleep(0.5)
