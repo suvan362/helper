@@ -8,3 +8,8 @@ explanation goes here
 explanation goes here
 ### Download DSi CFW Files
 explanation and files go here
+## Authors
+Project created and developed by Suvan and TitleX
+```
+some legal thing or something goes here
+```
