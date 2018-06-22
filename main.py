@@ -29,7 +29,7 @@ while True:
   
   ans = input('Are you going to use the default downloads folder for your downloads? [Y/N]').lower()
   if ans in ['y', 'yes', 'yep', 'yeah why not', 'alright', 'fine']:
-    dwndir = '%USERPROFILE%\Downloads\'
+    dwndir = '%USERPROFILE%\\Downloads\\'
     break
   elif ans in ['n', 'no', 'nope', 'no way', 'not a chance', 'not happening']:
     print(' please enter the directory of the folder.')
