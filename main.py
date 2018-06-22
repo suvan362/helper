@@ -30,17 +30,16 @@ print('Welcome to hiyacfw helper (some name) v1.0')
 time.sleep(1)
 print('This version is early in developemt.')
 time.sleep(1)
-print('Proceed with caution')
+print('Proceed with caution.')
 time.sleep(1)
-input('Press enter to continue')
+input('Press enter to continue.')
 print('Please install all the packages mentioned below. They can all be found in the README.')
-print('1. The latest release of Unlaunch')
-print('2. We are currently using Unlaunch v0.8, as 0.9 has bugs preventing HiyaCFW from working')
-print('3. The latest release of HBMenu')
-print('4. The latest release of ugopwn or flipnote lenny')
-print('5. The latest release of twlnf')
-print('6. The latest release of DSi SRL Extractor')
-input('Press enter to continue')
+print('1. Unlaunch v0.8. We are using 0.8 as 0.9 has bugs preventing HiyaCFW from working.')
+print('2. The latest release of HBMenu.')
+print('3. The latest release of ugopwn or flipnote lenny.')
+print('4. The latest release of twlnf.')
+print('5. The latest release of DSi SRL Extractor.')
+input('Press enter to continue.')
 
 #establishes downloads dir
 while True:
@@ -49,8 +48,7 @@ while True:
     dwndir = '%USERPROFILE%\\Downloads\\'
     break
   elif ans in ['n', 'no', 'nope', 'no way', 'not a chance', 'not happening']:
-    print(' please enter the directory of the folder.')
-    dwndir = 'C:\\' + input('Downloads directory = C:\\')
+    dwndir = input('Please enter the directory you will download the files to: ')
     break
     
 #checks if all files needed for program are downloaded
@@ -60,6 +58,6 @@ for filename in dsifiles:
   if checkA and checkB:
     pass
   else:
-    print('file ' + 'file_needed.zip' + ' not found')
+    print(filename + ' not found')
     input('Press enter to end the program.')
     quit()
