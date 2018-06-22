@@ -24,6 +24,17 @@ print('This version is early in developemt.')
 time.sleep(0.5)
 print('Proceed with caution')
 time.sleep(0.5)
+print(' press ok to continue')
+a=input.lower()
+if a= 'ok'
+print(' please install all the packages mentioned below. you can download it from our wordpress pr wixsite')
+print(' 1.the latest release of Unlaunch')
+print ('2.We are currently using Unlaunch v0.8, as 0.9 has bugs preventing HiyaCFW from working')
+pirnt ('3.The latest release of HBMenu')
+print('4.The latest release of ugopwn or flipnote lenny')
+print('5.The latest release of twlnf')
+print('6.The latest release of DSi SRL Extractor')
+
 
 while True:
   
