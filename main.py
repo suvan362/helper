@@ -23,7 +23,7 @@ try:
 except ImportError:
   install('os.path')
 
-dsifiles = ['file1', 'file2', 'file3']
+dsifiles = ['unlau08.zip', 'file2', 'file3']
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
