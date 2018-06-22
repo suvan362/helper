@@ -59,6 +59,6 @@ for filename in dsifiles:
   if checkA and checkB:
     pass
   else:
-    print(filename + ' not found')
+    print(filename + ' not found.')
     input('Press enter to end the program.')
     quit()
