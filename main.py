@@ -27,11 +27,20 @@ dsifiles = ['file1', 'file2', 'file3']
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
-time.sleep(0.5)
+time.sleep(1)
 print('This version is early in developemt.')
-time.sleep(0.5)
+time.sleep(1)
 print('Proceed with caution')
-time.sleep(0.5)
+time.sleep(1)
+input('Press enter to continue')
+print('Please install all the packages mentioned below. They can all be found in the README.')
+print('1. The latest release of Unlaunch')
+print('2. We are currently using Unlaunch v0.8, as 0.9 has bugs preventing HiyaCFW from working')
+print('3. The latest release of HBMenu')
+print('4. The latest release of ugopwn or flipnote lenny')
+print('5. The latest release of twlnf')
+print('6. The latest release of DSi SRL Extractor')
+input('Press enter to continue')
 
 #establishes downloads dir
 while True:
