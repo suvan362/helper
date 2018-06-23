@@ -53,7 +53,7 @@ while True:
     break
   
     
-#checks if all files needed for program are downloaded
+#checks if all files needed for program are downloaded.
 for filename in dsifiles:
    checkA = os.path.exists(dwndir + filename)
    checkB = os.path.isfile(dwndir + filename)
