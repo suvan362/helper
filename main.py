@@ -70,15 +70,6 @@ for filename in dsifiles:
     input('Press enter to end the program. ')
     quit()
 
-#establishes sd card drive    
-while True:
-  print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
-  sddrive = input('').lower()
-  if sddrive in alphabet[3:] or alphabet[:2]:
-    break
-  elif sddrive == 'c':
-    print('That\'s your computer drive!')
-
 print('Enter 1 if you have ugopwn installed.')
 print('Enter 2 if you have flipnote lenny installed.')
 ans = input('')
@@ -103,3 +94,12 @@ while True:
     print('flipnote lenny not found.')
     input('Press enter to end the program. ')
     quit()
+
+#establishes sd card drive    
+while True:
+  print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
+  sddrive = input('').lower()
+  if sddrive in alphabet[3:] or alphabet[:2]:
+    break
+  elif sddrive == 'c':
+    print('That\'s your computer drive!')
