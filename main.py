@@ -76,7 +76,7 @@ while True:
   sddrive = input('').lower()
   if sddrive in alphabet[3:] or alphabet[:2]:
     break
-  elif sddrive = 'c':
+  elif sddrive == 'c':
     print('That\'s your computer drive!')
 
 print('Enter 1 if you have ugopwn installed.')
