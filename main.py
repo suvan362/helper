@@ -26,7 +26,13 @@ try:
   import os
 except ImportError:
   install('os')
-
+  
+try:
+  from string import ascii_lowercase
+except ImportError:
+  install('string')
+  
+alphabet = list(ascii_lowercase)
 dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2','twlnf-v0.3.1a.7z','dsi_srl_extract.zip']
 
 #initial messages
@@ -56,8 +62,9 @@ while True:
 #establishes sd card drive    
 while True:
   print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
-  sddir = input('').lower()
-  break #if is letter between A-Z not C then break. I put break for now, put the if statement later.
+  sddrive = input('').lower()
+  if sddrive in alphabet[2:] or alphabet[:2]:
+    break
     
 #checks if all files needed for program are downloaded.
 for filename in dsifiles:
