@@ -64,7 +64,7 @@ for filename in dsifiles:
     input('Press enter to end the program.')
     quit()
 while True:
- print(' type 1 if you have ugopwn installed , type 2 if you have plipnote lenny onstalled')
+ print(' type 1 if you have ugopwn installed , type 2 if you have flipnote lenny installed')
  ans1=input('').lower()
  if ans1 in ['1']:
     checkc= os.path.exists(dwndir +'ugopwn.zip' )
@@ -73,7 +73,7 @@ while True:
      break
   
     else:
-     print(filename + ' not found.')
+     print( 'ugopwn not found.')
      input('Press enter to end the program.')
      quit()
     
@@ -83,7 +83,7 @@ while True:
    if checkc and checkd:
      break
    else:
-     print(filename + ' not found.')
+     print( 'flipnote lenny not found.')
      input('Press enter to end the program.')
      quit()
     
