@@ -22,6 +22,11 @@ try:
 except ImportError:
   install('os.path')
 
+try:
+  import os
+except ImportError:
+  install('os')
+
 dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2','twlnf-v0.3.1a.7z','dsi_srl_extract.zip']
 
 #initial messages
@@ -41,8 +46,7 @@ input('Press enter to continue.')
 while True:
   ans = input('Are you going to use the default downloads folder for your downloads? [Y/N]').lower()
   if ans in ['y', 'yes', 'yep', 'yeah why not', 'alright', 'fine']:
-    print(' enter username of your pc')
-    dwndir = '%USERPROFILE%\\Downloads\\'
+    dwndir = os.environ['USERPROFILE'] + '\\Downloads\\'
     break
   elif ans in ['n', 'no', 'nope', 'no way', 'not a chance', 'not happening']:
     print('Please enter the directory you will download the files to.')
