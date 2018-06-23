@@ -63,7 +63,7 @@ while True:
 while True:
   print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
   sddrive = input('').lower()
-  if sddrive in alphabet[2:] or alphabet[:2]:
+  if sddrive in alphabet[3:] or alphabet[:2]:
     break
     
 #checks if all files needed for program are downloaded.
