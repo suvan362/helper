@@ -55,10 +55,10 @@ while True:
     
 #checks if all files needed for program are downloaded
 for filename in dsifiles:
-  checkA = True
-  checkB = True
-  if checkA and checkB  :
-    continue #should we put break or continue?
+   checkA = os.path.exists(dwndir + filename)
+   checkB = os.path.isfile(dwndir + filename)
+   if checkA and checkB:
+      pass
   else:
     print(filename + ' not found.')
     input('Press enter to end the program.')
