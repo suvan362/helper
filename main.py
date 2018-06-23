@@ -46,7 +46,9 @@ input('Press enter to continue.')
 while True:
   ans = input('Are you going to use the default downloads folder for your downloads? [Y/N]').lower()
   if ans in ['y', 'yes', 'yep', 'yeah why not', 'alright', 'fine']:
-    dwndir = '%USERPROFILE%\\Downloads\\'
+    print(' enter username of your pc')
+    uername=input.lower()
+    dwndir = 'user\\username\\Downloads\\'
     break
   elif ans in ['n', 'no', 'nope', 'no way', 'not a chance', 'not happening']:
     dwndir = input('Please enter the directory you will download the files to: ')
@@ -62,5 +64,5 @@ for filename in dsifiles:
     print(filename + ' not found.')
     input('Press enter to end the program.')
     quit()
-    print('please enter your sd card directory(only name or letter.for example if your sd card is G:\.....write only G ....dont write G:\')
+    print('please enter your sd card directory(only name or letter.for example if your sd card is G:\\.....write only G ....dont write G:\\')
     sddirectory=input.lower()
