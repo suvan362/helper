@@ -33,7 +33,7 @@ except ImportError:
   install('string')
   
 alphabet = list(ascii_lowercase)
-dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2','twlnf-v0.3.1a.7z','dsi_srl_extract.zip']
+dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2','fwTool.nds','dsi_srl_extract.zip']
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
@@ -44,7 +44,7 @@ print('Please install all the packages mentioned below. They can all be found in
 print('1. Unlaunch v0.8. We are using 0.8 as 0.9 has bugs preventing HiyaCFW from working.')
 print('2. The latest release of HBMenu.')
 print('3. The latest release of ugopwn or flipnote lenny.')
-print('4. The latest release of twlnf.')
+print('4. The latest release of fwTool.')
 print('5. The latest release of DSi SRL Extractor.')
 input('Press enter to continue.')
 
