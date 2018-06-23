@@ -51,20 +51,20 @@ while True:
     
 #establishes sd card drive    
 while True:
-    print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
-    sddir = input('').lower()
-    #if is letter between A-Z not C then break
+  print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
+  sddir = input('').lower()
+  #if is letter between A-Z not C then break
     
 #checks if all files needed for program are downloaded.
 for filename in dsifiles:
-   checkA = os.path.exists(dwndir + filename)
-   checkB = os.path.isfile(dwndir + filename)
-   if checkA and checkB:
-      pass
-    else:
-      print(filename + ' not found.')
-      input('Press enter to end the program. ')
-      quit()
+  checkA = os.path.exists(dwndir + filename)
+  checkB = os.path.isfile(dwndir + filename)
+  if checkA and checkB:
+    pass
+  else:
+    print(filename + ' not found.')
+    input('Press enter to end the program. ')
+    quit()
 
 
 print('Enter 1 if you have ugopwn installed.')
@@ -78,18 +78,16 @@ while True:
     if checkA and checkB:
       break
     else:
-     print('ugopwn not found.')
-     input('Press enter to end the program. ')
-     quit()
+      print('ugopwn not found.')
+      input('Press enter to end the program. ')
+      quit()
 
   elif ans == '2':
    checkA = os.path.exists(dwndir + 'FlipNote-Lenny.zip')
    checkB = os.path.isfile(dwndir + 'FlipNote-Lenny.zip')
    if checkA and checkB:
-     break
+    break
    else:
-     print('flipnote lenny not found.')
-     input('Press enter to end the program. ')
-     quit()
-
-    
+    print('flipnote lenny not found.')
+    input('Press enter to end the program. ')
+    quit()
