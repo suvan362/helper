@@ -63,4 +63,4 @@ for filename in dsifiles:
     input('Press enter to end the program.')
     quit()
     print('please enter your sd card directory(only name or letter.for example if your sd card is G:\.....write only G ....dont write G:\')
-    
+    sddirectory=input.lower()
