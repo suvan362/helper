@@ -57,7 +57,7 @@ while True:
 while True:
   print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
   sddir = input('').lower()
-  #if is letter between A-Z not C then break
+  break #if is letter between A-Z not C then break. I put break for now, put the if statement later.
     
 #checks if all files needed for program are downloaded.
 for filename in dsifiles:
