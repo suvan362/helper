@@ -10,7 +10,7 @@ except ImportError:
   quit()
 
 def install(package):
-  pipmain(['install', package])
+  pipmain(['install', '--user', package])
 
 try:
   import time
