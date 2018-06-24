@@ -27,7 +27,7 @@ try:
 except ImportError:
   install('os')
   
-dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2,fwtool.nds']
+dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2', 'fwtool.nds']
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
