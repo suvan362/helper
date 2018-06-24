@@ -81,61 +81,25 @@ for filename in dsifiles:
 print('Enter 1 if you have ugopwn installed.')
 print('Enter 2 if you have flipnote lenny installed.')
 ans = input('')
-
-while True:
-  if ans == '1':
+if ans == '1':
+  while True:
     checkA = os.path.exists(dwndir + 'ugopwn.zip' )
     checkB = os.path.isfile(dwndir + 'ugopwn.zip')
     if checkA and checkB:
       break
     else:
       print('ugopwn not found.')
-      input('Press enter to to recheck')
-      checkA = os.path.exists(dwndir + 'ugopwn.zip' )
-      checkB = os.path.isfile(dwndir + 'ugopwn.zip')
-      if checkA and checkB:
-       break
-      else:
-       print('ugopwn not found.')
-       input('Press enter to to recheck')
-       checkA = os.path.exists(dwndir + 'ugopwn.zip' )
-       checkB = os.path.isfile(dwndir + 'ugopwn.zip')
-       if checkA and checkB:
-          break
-       else:
-            print(' Error code:1000 we could not not find ugopwn.zip inspite of your retry.')
-            print('reopen the program and try again.press enter to close the program.')
-            input('')
-            quit()
-            
-       
-       
-      
+      input('Press press enter once you have downloaded the file.')
 
-  elif ans == '2':
+elif ans == '2':
+  while True:
    checkA = os.path.exists(dwndir + 'FlipNote-Lenny.zip')
    checkB = os.path.isfile(dwndir + 'FlipNote-Lenny.zip')
    if checkA and checkB:
     break
    else:
     print('flipnote lenny not found.')
-    input('Press enter to recheck ')
-    checkA = os.path.exists(dwndir + 'FlipNote-Lenny.zip' )
-    checkB = os.path.isfile(dwndir + 'FlipNote-Lenny.zip')
-    if checkA and checkB:
-       break
-    else:
-       print('flipnote lenny not found.')
-       input('Press enter to to recheck')
-       checkA = os.path.exists(dwndir + 'Flipnote-Lenny.zip' )
-       checkB = os.path.isfile(dwndir + 'Flipnote-Lenny.zip')
-       if checkA and checkB:
-          break
-       else:
-            print(' Error code:1000. we could not not find FlipnoteLenny.zip inspite of your retry.')
-            print('reopen the program and try again.press enter to close the program.')
-            input('')
-            quit()
+    input('Press press enter once you have downloaded the file.')
 
 #establishes sd card drive    
 while True:
