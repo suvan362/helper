@@ -33,7 +33,8 @@ except ImportError:
   install('string')
   
 alphabet = list(ascii_lowercase)
-dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2','fwTool.nds']
+dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2,fwtool.nds']
+
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
@@ -66,15 +67,31 @@ while True:
     break
 
 #checks if all files needed for program are downloaded.
-for filename in dsifiles:
+for filename in dsifiles :
   checkA = os.path.exists(dwndir + filename)
   checkB = os.path.isfile(dwndir + filename)
   if checkA and checkB:
     pass
   else:
     print(filename + ' not found.')
-    input('Press enter to end the program. ')
-    quit()
+    input('Press press enter to recheck ')
+    checkA = os.path.exists(dwndir + filename)
+    checkB = os.path.isfile(dwndir + filename)
+    if checkA and checkB:
+     pass
+    else:
+     print(filename + ' not found.')
+     input('Press press enter to recheck ')
+     checkA = os.path.exists(dwndir + filename)
+     checkB = os.path.isfile(dwndir + filename)
+     if checkA and checkB:
+      pass
+     
+     else:
+         print(' Error code:1000 we could not not find '+filename+' inspite of your retry.')
+         print('reopen the program and try again.press enter to close the program.')
+         input('')
+         quit()
 
 print('Enter 1 if you have ugopwn installed.')
 print('Enter 2 if you have flipnote lenny installed.')
@@ -88,8 +105,27 @@ while True:
       break
     else:
       print('ugopwn not found.')
-      input('Press enter to end the program. ')
-      quit()
+      input('Press enter to to recheck')
+      checkA = os.path.exists(dwndir + 'ugopwn.zip' )
+      checkB = os.path.isfile(dwndir + 'ugopwn.zip')
+      if checkA and checkB:
+       break
+      else:
+       print('ugopwn not found.')
+       input('Press enter to to recheck')
+       checkA = os.path.exists(dwndir + 'ugopwn.zip' )
+       checkB = os.path.isfile(dwndir + 'ugopwn.zip')
+       if checkA and checkB:
+          break
+       else:
+            print(' Error code:1000 we could not not find ugopwn.zip inspite of your retry.')
+            print('reopen the program and try again.press enter to close the program.')
+            input('')
+            quit()
+            
+       
+       
+      
 
   elif ans == '2':
    checkA = os.path.exists(dwndir + 'FlipNote-Lenny.zip')
@@ -98,14 +134,59 @@ while True:
     break
    else:
     print('flipnote lenny not found.')
-    input('Press enter to end the program. ')
-    quit()
+    input('Press enter to recheck ')
+    checkA = os.path.exists(dwndir + 'FlipNote-Lenny.zip' )
+    checkB = os.path.isfile(dwndir + 'FlipNote-Lenny.zip')
+    if checkA and checkB:
+       break
+    else:
+       print('flipnote lenny not found.')
+       input('Press enter to to recheck')
+       checkA = os.path.exists(dwndir + 'Flipnote-Lenny.zip' )
+       checkB = os.path.isfile(dwndir + 'Flipnote-Lenny.zip')
+       if checkA and checkB:
+          break
+       else:
+            print(' Error code:1000. we could not not find FlipnoteLenny.zip inspite of your retry.')
+            print('reopen the program and try again.press enter to close the program.')
+            input('')
+            quit()
 
 #establishes sd card drive    
 while True:
   print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
-  sddrive = input('').lower()
+  sddrive = input('')
   if sddrive in alphabet[3:] or alphabet[:2]:
     break
   elif sddrive == 'c':
     print('That\'s your computer drive!')
+    input('reopen the program and try again.press enter to close the program.')
+    quit()
+    
+
+while True:
+  input('everything is prepared to homebrew your dsi.please copy flipnote to yoyr sd card and insert it and press enter to continue')
+  checksd = os.path.exists(sddrive+':\\')
+  
+  if checksd: 
+   break
+  else:
+   print('please insert your sd card')
+   input('press enter to recheck')
+   checksd = os.path.exists(sddrive+':\\')
+  
+   if checksd: 
+     break
+   else:
+     print('please insert your sd card')
+     input('press enter to recheck')
+     checksd = os.path.exists(sddrive+':\\')
+  
+     if checksd: 
+       break
+     else:
+       print('please insert your sd card')
+       input('press enter to recheck')
+   
+while True:
+ input('sd card has been insterted preparing.....')#I put this just for testing
