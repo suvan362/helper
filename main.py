@@ -4,13 +4,13 @@ dsi cfw helper v1.0
 
 #import modules
 try:
-  import pip
+  from pip._internal import main as pipmain 
 except ImportError:
   input('pip not installed! pip must be installed to run this program. Press enter to end the program.')
   quit()
 
 def install(package):
-  pip.main(['install', package])
+  pipmain(['install', package])
 
 try:
   import time
