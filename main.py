@@ -27,14 +27,7 @@ try:
 except ImportError:
   install('os')
   
-try:
-  from string import ascii_lowercase
-except ImportError:
-  install('string')
-  
-alphabet = list(ascii_lowercase)
 dsifiles = ['unlau08.zip', 'hbmenu-0.7.1.tar.bz2,fwtool.nds']
-
 
 #initial messages
 print('Welcome to hiyacfw helper (some name) v1.0')
@@ -105,37 +98,14 @@ elif ans == '2':
 while True:
   print('Please enter your SD Card drive letter. ex: `G`, `H`, `I`')
   sddrive = input('')
-  if sddrive in alphabet[3:] or alphabet[:2]:
+  if os.path.exists(sddrive+':\\'):
     break
   elif sddrive == 'c':
-    print('That\'s your computer drive!')
-    input('reopen the program and try again.press enter to close the program.')
-    quit()
-    
-
-while True:
-  input('everything is prepared to homebrew your dsi.please copy flipnote to yoyr sd card and insert it and press enter to continue')
-  checksd = os.path.exists(sddrive+':\\')
-  
-  if checksd: 
-   break
+    print('That\'s your computer drive! Press enter to try again.')
+    input('')
   else:
-   print('please insert your sd card')
-   input('press enter to recheck')
-   checksd = os.path.exists(sddrive+':\\')
-  
-   if checksd: 
-     break
-   else:
-     print('please insert your sd card')
-     input('press enter to recheck')
-     checksd = os.path.exists(sddrive+':\\')
-  
-     if checksd: 
-       break
-     else:
-       print('please insert your sd card')
-       input('press enter to recheck')
-   
+    print('The specified drive does not exist. Press enter to try again.')
+    input('')
+    
 while True:
  input('sd card has been insterted preparing.....')#I put this just for testing
