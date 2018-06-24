@@ -67,31 +67,16 @@ while True:
     break
 
 #checks if all files needed for program are downloaded.
-for filename in dsifiles :
-  checkA = os.path.exists(dwndir + filename)
-  checkB = os.path.isfile(dwndir + filename)
-  if checkA and checkB:
-    pass
-  else:
-    print(filename + ' not found.')
-    input('Press press enter to recheck ')
+for filename in dsifiles:
+  while True:
     checkA = os.path.exists(dwndir + filename)
     checkB = os.path.isfile(dwndir + filename)
     if checkA and checkB:
-     pass
+      break
     else:
-     print(filename + ' not found.')
-     input('Press press enter to recheck ')
-     checkA = os.path.exists(dwndir + filename)
-     checkB = os.path.isfile(dwndir + filename)
-     if checkA and checkB:
-      pass
-     
-     else:
-         print(' Error code:1000 we could not not find '+filename+' inspite of your retry.')
-         print('reopen the program and try again.press enter to close the program.')
-         input('')
-         quit()
+      print(filename + ' not found.')
+      input('Press press enter once you have downloaded the file.')
+
 
 print('Enter 1 if you have ugopwn installed.')
 print('Enter 2 if you have flipnote lenny installed.')
