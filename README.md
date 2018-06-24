@@ -3,9 +3,9 @@ description goes here.
 ## Prerequisites
 these are things you need to do before starting the program.
 ### Install Python3
-explanation goes here.
+explanation goes here. Python3.6 or higher.
 ### Install pip
-explanation goes here.
+explanation goes here. Must be latest version.
 ### Download DSi CFW Files
 explanation and files go here.
 ## Authors
