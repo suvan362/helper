@@ -9,6 +9,15 @@ except ImportError:
   input('pip not installed! pip must be installed to run this program. Press enter to end the program.')
   quit()
 
+try:
+  from pip import main as pipmain
+except:
+  try:
+    from pip._internal import main as pipmain 
+  except ImportError:
+    input('pip not installed! pip must be installed to run this program. Press enter to end the program.')
+    quit()
+
 def install(package):
   pipmain(['install', '--user', package])
 
