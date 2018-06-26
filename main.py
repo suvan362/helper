@@ -113,5 +113,30 @@ while True:
     print('The specified drive does not exist. Press enter to try again.')
     input('')
     
-while True:
- input('sd card has been insterted preparing.....')#I put this just for testing
+print('Setup complete!')
+input('Press enter start the program.')
+
+#extract ugopwn content to sd
+print('Done!')
+#copy fwtool.nds to sd
+print('Done!')
+#extract boot.nds from hbmenu.tar.bz2/hbmenu to sd
+print('Done!')
+
+print('You may now eject your SD card and insert it in your DSi.')
+print('Follow the steps under "Creating a NAND backup" @ dsi.cfw.guide')
+print('Press enter once you have completed these steps.')
+input('')
+
+print('Insert your sd back into your computer (make sure to use the same port if you have multiple).')
+print('Press enter once your sd is inserted.')
+input('')
+
+#extract unlaunch.dsi to sd as unlaunch.nds
+print('Done!')
+
+print('Insert your sd back in your DSi then coninue from step 5 of "Installation".')
+print('Press enter once you have completed these steps.')
+input('')
+
+
