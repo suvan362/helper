@@ -1,5 +1,5 @@
 # DSi CFW Helper
-description goes here. Run the program in the your working directory for following the [http://dsi.cfw.guide](dsi.cfw.guide) (usually a folder on your desktop). 
+description goes here. Run the program in the your working directory for following the [dsi.cfw.guide](http://dsi.cfw.guide) (usually a folder on your desktop). 
 ## Prerequisites
 these are things you need to do before starting the program.
 ### Install Python3
