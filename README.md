@@ -3,7 +3,7 @@ description goes here. Run the program in the your working directory for followi
 ## Prerequisites
 these are things you need to do before starting the program.
 ### An SD Card 2 GB or lower or one partitioned to be 2 GB or lower
-If you cannot do this you will need to follow [this link](http://dsi.cfw.guide/more/replacing-system-menu/) after the program ends.
+If you cannot meet this requirement you will need to follow [this link](http://dsi.cfw.guide/more/replacing-system-menu/) after the program ends.
 ### Install Python3
 explanation goes here.
 ### Install pip
