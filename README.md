@@ -14,4 +14,8 @@ explanation and files go here.
 This project was created and developed by Suvan and TitleXYZ.
 ## License
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details.
-By using this program you agree that we (the program developers) take no responsibility if anything is to happen to your computer, DSi system, or any other hardware. 
+By using this program you agree that we (the program developers) take no responsibility if anything is to happen to your computer, DSi system, or any other hardware.
+
+### important information
+This project is dead. If you work on this project in the future, please contact us. GNU liscence still applies to the project.
+-dsi brew helper team
